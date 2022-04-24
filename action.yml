@@ -7,11 +7,11 @@ branding:
 inputs:
   path:
     description: >
-      Specific path to lint instead of the default `.`. Multiple arguments are
+      Specific path to lint instead of the default empty argument. Multiple arguments are
       not supported and you will need to alter linter configuration to
       accommodate other use cases.
     required: false
-    default: "."
+    default: null
   args:
     description: deprecated
     deprecationMessage: >
