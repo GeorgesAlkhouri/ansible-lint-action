@@ -5,13 +5,6 @@ branding:
   icon: shield
   color: red
 inputs:
-  path:
-    description: >
-      Specific path to lint instead of the default empty argument. Multiple arguments are
-      not supported and you will need to alter linter configuration to
-      accommodate other use cases.
-    required: false
-    default: null
   args:
     description: deprecated
     deprecationMessage: >
@@ -29,4 +22,3 @@ runs:
     GITHUB_WORKFLOW: "{{ github.workflow.name }}"
   args:
     - -vvv
-    - ${{ inputs.path }}
